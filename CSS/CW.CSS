@@ -1,0 +1,21 @@
+/* Doing internal css in the head only applies to that HTML page and will not be used on other pages
+ */
+ #h1{
+    color: rgb(82, 0, 70);
+    padding-top: 10px;
+    text-align: center;
+  }
+ body {
+    /* background-image: url("/assets/img/IMG_7935.jpeg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    margin-right: 200px;
+    background-attachment: fixed; */
+  }
+  
+
+  #specialheading {
+    color:blueviolet
+    /* This is an example of a class. This needs to be unique and give it special properties to things within the HTML file 
+     */
+  }
