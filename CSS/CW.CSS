@@ -1,21 +1,68 @@
 /* Doing internal css in the head only applies to that HTML page and will not be used on other pages
  */
- #h1{
-    color: rgb(82, 0, 70);
-    padding-top: 10px;
+h1{
+    color: rgb(232, 215, 229);
+    background-color:rgb(80, 1, 50);
     text-align: center;
+    font-size: 3.8rem;
+    font-style: italic;
+    font-weight: 900;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-family: "momo signature", "Lucida Handwriting", cursive;
+    /* If you put font family in body, it will apply to the whole doc */
   }
- body {
-    /* background-image: url("/assets/img/IMG_7935.jpeg");
+body{
+    background-color: rgb(130, 105, 187);
+    /* background-image: url("/assets/img/puppyfloor.jpg"); */
     background-repeat: no-repeat;
     background-position: right top;
-    margin-right: 200px;
-    background-attachment: fixed; */
+    margin-right: 20px;
+    background-attachment: fixed;
+    color:var(--primary-red);
+    font-family:"momo trust sans", "Arial", sans-serif
+    /* put three font families to include fallback fonts. Fallback fonts that are two words require quotation marks, if it is one word, they do not require quotes */
+}
+  a{
+    color:darkorchid;
+    /* Change link colour */
+    text-decoration: none;
+    background-color: rgba(255, 253, 255, 0.7);
+    padding: 10px 12px 12px 14px;
+    margin-left: 50px;
+    /* Goes clockwise with parameters */
+  }
+  a:hover{
+    color:blue
+  }
+  /* a:visited{
+    color:rgb(109, 75, 75)
+  } */
+  .text-background-color{
+    background-color: rgb(187, 38, 148);
+    
   }
   
-
-  #specialheading {
-    color:blueviolet
+  .text-pink {
+    color:rgb(255, 183, 241)
     /* This is an example of a class. This needs to be unique and give it special properties to things within the HTML file 
      */
+  }
+  .text-para{
+    font-size: 1.2rem;
+    text-align: justify;
+    text-align-last: left;
+    text-decoration-style:dotted;
+    text-decoration-line: underline;
+    text-shadow: 2px 2px rgb(170, 149, 172);
+  }
+  @media(max-width:576px){
+    body{
+      background-color:rgb(130, 105, 187);
+    }
+  }
+  :root{
+    --primary-red: rgb(138, 35, 45);
+    --also-red:rgb(138, 35, 55)
+    /* variables help to make multiple changes at once */
   }
