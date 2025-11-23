@@ -1,0 +1,51 @@
+nav{
+    background-color: rgba(163, 121, 202, 0.486);
+    color:aquamarine
+} */
+.cal-sans-regular {
+    font-family: "Cal Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  h1{
+    color: rgb(232, 215, 229);
+    background-color:rgb(136, 24, 93);
+    text-align: center;
+    font-size: 3.8rem;
+    font-style: bold;
+    font-weight: 900;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-family: "Cal Sans", Arial, Helvetica, sans-serif;
+    /* If you put font family in body, it will apply to the whole doc */
+  }
+
+  body, html {
+    height: 100%;
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Assets/img/puppyfloor.jpg");
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
