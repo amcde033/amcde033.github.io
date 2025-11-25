@@ -1,29 +1,101 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Andrea McDermid Boué</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="CSS/mystyle.css">
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a href="aboutme.html">About me</a>
-        <a href="professional.html">Experience</a>
-        <a href="education.html">Education</a>
-        <a href="skills.html">Skills</a>
-      </nav>
-      <!-- Textdecorationnone in css for the link -->
-    </header>
-    <div class="hero-image">
-      <div class="hero-text">
-        <h1>Welcome to my website!</h1>
-        <h1>I am John Doe</h1>
-        <p>And I'm a Photographer</p>
-        <button>Learn more about me!</button>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andrea McDermid's Personal Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/mystyle.css">
+  <script src="https://kit.fontawesome.com/ed5fc34857.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<section class="header">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid ">
+      <a class="navbar-brand" href="Index.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-chat-heart white-pic" viewBox="0 0 16 16"> </svg>Andrea McDermid Boué</a>
+      <!-- ask him to centre image -->
+       <!-- svg won't change colour -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse ms-auto text-end" id="navbarSupportedContent">
+        <!-- Ask him how to do text right -->
+        <ul class="navbar-nav ">
+          <li class="nav-item">
+            <a class="nav-link active-home" aria-current="page" href="Index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutme.html">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="education.html">Education</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Experience
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="professional.html">Professional Experience</a></li>
+              <li><a class="dropdown-item" href="Volunteer.html">Volunteer Experience</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="skills.html">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">About Me</a>
+          </li>
+        </ul>
       </div>
-    </div> 
-  </body>
+    </div>
+  </nav>
+</section>
+
+<div>
+  <div class="row">
+    <div class="col-md-6">
+      <h1>Welcome to my website!</h1>
+      <p>Hello! My name is Andrea McDermid Boué, and I am an information professional with a passion for research, literature reviews, and providing client-oriented solutions. I am currently working towards a Master's degree in Information Studies from McGill University, where I specialize in knowledge management, user experience, and information organization.</p>
+    </div>
+    <div class="col-md-6">
+
+</div>
+
+
+  <div class="px-4 pt-5 my-5 text-center border-bottom hero">
+    <h1 class="display-4 fw-bold text-body-emphasis">Welcome to my website!</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4"> Thank you for visiting my personal website. I'm Andrea McDermid Boué, an information professional with expertise in research, literature reviews, and client-oriented solutions.
+      </p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+        <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Get a Quote</button>
+        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Contact Us</button>
+      </div>
+    </div>
+    <div class="overflow-hidden" style="max-height: 30vh;">
+      <div class="container px-5">
+        <img src="./moving-van.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700"
+          height="500" loading="lazy">
+      </div>
+    </div>
+  </div>
+
+      <h2>Portfolio Highlight</h2>
+      <h3>COVID19 Image Classification</h3>
+      <p>Used and developed convolutional neural networks to create a model identifying patient chest x-rays infected with COVID19.</p>
+      <img src="Assets/img/lungs.svg" alt="Lung icon" style="max-width: 100%; height: auto;">
+</div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
