@@ -9,16 +9,13 @@ html, body {
 }
 
 body {
-  /* display: flex;
+  display: flex;
   flex-direction: column; /* Stacks header, content, and footer vertically */
   min-height: 100vh;
-  min-height: 100dvh; */
-  display: grid;
-  grid-template-rows: auto 1fr auto; /* Header, Main (fills space), Footer */
-  min-height: 100vh;
+  min-height: 100dvh;
 }
 
-.content-wrap { /* Container for main content */
+.content-wrap { Container for main content
   flex-grow: 1; /* Allows content to expand and push footer down */
 }
 .lpurple-background{
@@ -27,8 +24,6 @@ body {
 body{
   font-family:'Outfit';
   padding-bottom:0px;
-  margin-top: 1rem !important;
-  margin-bottom:1rem !important;
 }
 p,li{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif sans-serif;
@@ -452,8 +447,8 @@ footer .fa{
   position:relative;
   left: 38px;
   top: 20px;
-  padding-top: 5px;
-  padding-bottom:55px;
+  padding-top: 3.5px;
+  padding-bottom:50px;
 }
 
 #atwater{
@@ -464,7 +459,7 @@ footer .fa{
 }
 #santropol{
   max-width: 75%;
-  padding-bottom: 9px;
+  padding-bottom: 0px;
   position: relative;
   left:45px;
 }
