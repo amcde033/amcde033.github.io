@@ -1,32 +1,36 @@
 
 /* General properties and classes across pages */
+/* Backgrounds */
 .gradient{
   background-image:linear-gradient(rgba(250, 236, 255, 0.98),#7a1a9e)
 }
+.lpurple-background{
+  background-color: #d9ccf3;
+}
+/* General formatting classes */
 html, body {
   height: 100%; /* Ensures html and body take full viewport height */
   margin: 0; /* Removes default body margin/* */
 }
-
+*{
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+}
 body {
   display: flex;
   flex-direction: column; /* Stacks header, content, and footer vertically */
   min-height: 100vh;
   min-height: 100dvh;
 }
-
-.content-wrap { Container for main content
-  flex-grow: 1; /* Allows content to expand and push footer down */
-}
-.lpurple-background{
-  background-color: #d9ccf3;
-}
+/* Setting fonts */
 body{
-  font-family:'Outfit';
+  font-family:"Nunito Sans", sans-serif;
   padding-bottom:0px;
 }
 p,li{
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif sans-serif;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1rem;
 }
 
 h1{
@@ -48,7 +52,25 @@ h2{
 h3{
   font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+h4{
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 300;
+  font-style: normal;
+}
+h5{
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+h6{
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
   font-style: normal;
 }
 hr{
@@ -60,20 +82,7 @@ hr{
   margin: 0 auto;
   align-self: center;
 }
-
-/* .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-} */
- 
-*{
-  padding:0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
+/* categories of container and images */
 .inline-img {
   display: inline;
   margin: 0 0.125em;
@@ -84,11 +93,16 @@ hr{
 .margin-container{
   margin: 40px;
 }
-/* Navigation */
+/* SVG modification */
+.white-pic{
+  filter:invert(1);
+}
+/* Navigation classes */
 .header{
   background: #7a1a9e;
   background-image: none;
 }
+/* Changing the background of the nav bar */
 .bg-body-tertiary{
   background: #7a1a9e !important;
 }
@@ -156,10 +170,6 @@ hr{
 }
 a.nav-bar{
   color:#fff !important;
-}
-/* SVG modification */
-.white-pic{
-  filter:invert(1);
 }
 
 .nav-bar a {
@@ -231,7 +241,6 @@ footer .fa{
   padding: auto;
   font-size: 1rem;
   vertical-align: middle
-  /* display:inline-block; */
 }
 .row {
   --bs-gutter-x: 0;
@@ -271,13 +280,9 @@ footer .fa{
 .featurette-body li{
   margin-left:0px;
 }
-/* .featurette-body li ::marker{
-  position:relative;
-  left: 0px;
-} */
+
 .featurette-image{
   border-width: 15px;
-  border-color: #62164c;
   border-style: double ;
   width:500px;
   height:auto;
@@ -299,7 +304,6 @@ footer .fa{
 }
 
 /* Modifications to bootstrap carousel classes */
-
 .carousel {
     padding-bottom: 5px;
 }
@@ -369,7 +373,6 @@ footer .fa{
   left: 50%;
 }
 
-/* Add arrows to the left container (pointing right) */
 .left::before {
   content: " ";
   position: absolute;
@@ -381,7 +384,6 @@ footer .fa{
   border-color: transparent transparent transparent white;
 }
 
-/* Add arrows to the right container (pointing left) */
 .right::before {
   content: " ";
   position: absolute;
@@ -392,8 +394,6 @@ footer .fa{
   border-width: 10px 10px 10px 0;
   border-color: transparent white transparent transparent;
 }
-
-/* Fix the circle for containers on the right side */
 .right::after {
   left: -12px;
 }
@@ -435,6 +435,7 @@ footer .fa{
     left: 0%;
   }
 }
+
 /* CSS for volunteering cards */
 
 .card-container{
@@ -443,6 +444,7 @@ footer .fa{
 .card-img-top{
   max-width: 75%;
 }
+/* Setting dimensions of volunteering logo images */
 .vol-card-img{
   position:relative;
   left: 38px;
@@ -463,10 +465,10 @@ footer .fa{
   position: relative;
   left:45px;
 }
+/* Modifying accordion properties */
 .accordion{
   --bs-accordion-border-color: #131920 !important;
 }
-
 
 .accordion-button:not(.collapsed) {
   color: #21062b;
@@ -484,10 +486,7 @@ footer .fa{
 .progress-bar{
   background-color: #840b9f;
 }
-/* CSS for portfolio page */
-/* .card{
-  --bs-card-border-color: #3f2345;
-  } */
+
 /* CSS for contact page and form */
 .contact-container{
   height:100vh;
@@ -496,7 +495,7 @@ footer .fa{
   justify-content: space-evenly;
 
 }
-
+/* design for the left column */
 .contact-left{
   display:flex;
   flex-direction: column;
@@ -523,7 +522,7 @@ right: 20px;
   position:relative;
   right: 74px;
 }
-
+/* Styling the form */
 .contact-inputs{
   width:400px;
   height:50px;
@@ -561,6 +560,7 @@ border: 2px solid #3f2345;
 .contact-left button img{
   height:15px
 }
+/* Styling for right column */
 .contact-right img{
   width: 200px;
   filter: invert(1);

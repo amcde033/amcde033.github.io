@@ -1,132 +1,202 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" data-bs-theme="auto">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="" />
-    <meta
-      name="author"
-      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
-    />
-    <meta name="generator" content="Astro v5.13.2" />
     <title>Education</title>
     <link
       rel="canonical"
       href="https://getbootstrap.com/docs/5.3/examples/carousel/"
     />
-    <script src="../assets/js/color-modes.js"></script>
-    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="CSS/mystyle.css">
-  <script src="https://kit.fontawesome.com/ed5fc34857.js" crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-    <meta name="theme-color" content="#712cf9" />
+    <!-- Bootstrap style sheet -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font awesome js -->
+    <script
+      src="https://kit.fontawesome.com/ed5fc34857.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google font connection -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!-- My CSS stylesheet -->
+    <link rel="stylesheet" href="CSS/mystyle.css" />
   </head>
   <body>
-
-<section class="header">
-  <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="Index.html"><img src="Assets/img/chat-heart.svg" alt="logo icon" class="white-pic"> Andrea McDermid Boué</a>
-      <!-- ask him to centre image -->
-       <!-- svg won't change colour -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse ms-auto text-end" id="navbarSupportedContent">
-        <!-- Ask him how to do text right -->
-        <ul class="navbar-nav ">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="Index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="aboutme.html">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active-home" href="education.html">Education</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Experience
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="professional.html">Professional Experience</a></li>
-              <li><a class="dropdown-item" href="Volunteer.html">Volunteer Experience</a></li>
+    <!-- Building nav bar -->
+    <section class="header">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/"
+            ><img
+              src="Assets/img/chat-heart.svg"
+              alt="logo icon"
+              class="white-pic"
+            />
+            Andrea McDermid Boué</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div
+            class="collapse navbar-collapse ms-auto text-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aboutme.html">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active-home" href="education.html"
+                  >Education</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Experience
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="professional.html"
+                      >Professional Experience</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Volunteer.html"
+                      >Volunteer Experience</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="skills.html">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
             </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="skills.html">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="portfolio.html">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</section>
-    
-    </header>
+          </div>
+        </div>
+      </nav>
+    </section>
+
     <main>
       <div class="lpurple-background">
-      <h1>Education</h1>
-        <!-- START THE FEATURETTES -->
+        <h1>Education</h1>
+        <!-- Starting the featurettes -->
         <hr class="featurette-divider" />
         <div class="row featurette">
+          <!-- First featurette -->
           <div class="col-md-7">
             <h2 class="featurette-heading fw-bold">
-              Master's of Information Studies <br>
-             <span class="fw-lighter"> McGill University</span></h2>
-              <h3 class="text-body-secondary  featurette-body">Montreal, Quebec</h3>
-              <h4 class="featurette-body">2024 – Present</h4>
-              <ul class="lead featurette-body">
-                <li class="featurette-body">Awarded Vivi Martin Fellowship of $5500 in 2024.</li>
-              </ul>
+              Master's of Information Studies <br />
+              <span class="fw-lighter"> McGill University</span>
+            </h2>
+            <h3 class="text-body-secondary featurette-body">
+              Montreal, Quebec
+            </h3>
+            <h4 class="featurette-body">2024 – Present</h4>
+            <ul class="lead featurette-body">
+              <li class="featurette-body">
+                Awarded Vivi Martin Fellowship of $5500 in 2024.
+              </li>
+            </ul>
           </div>
           <div class="col-md-5">
-            <img src="./Assets/img/mcgill_logo.jpg" preserveAspectRatio="xMidYMid slice" alt="McGill University logo" class="featurette-image img-fluid mx-auto" id="mcgill" width="auto">
-            
+            <img
+              src="./Assets/img/mcgill_logo.jpg"
+              preserveAspectRatio="xMidYMid slice"
+              alt="McGill University logo"
+              class="featurette-image img-fluid mx-auto"
+              id="mcgill"
+              width="auto"
+            />
           </div>
         </div>
         <hr class="featurette-divider" />
+        <!-- Second Featurette -->
         <div class="row featurette">
           <div class="col-md-7 order-md-2">
             <h2 class="featurette-heading fw-bold lh-1">
               Honours Bachelor's of English Literature
-              <br>
-            <span class="fw-lighter"> University of Ottawa</span></h2>
-            <h3 class="text-body-secondary featurette-body"> Ottawa, Ontario</h3>
+              <br />
+              <span class="fw-lighter"> University of Ottawa</span>
+            </h2>
+            <h3 class="text-body-secondary featurette-body">Ottawa, Ontario</h3>
             <h4 class="featurette-body">2019 – 2023</h4>
             <ul class="lead featurette-body">
-                  <li>Entrance Scholarship of $4000 for an average above 95% upon high school graduation (2019).</li>
-                  <li>Cumulative CGPA of 9.79 (on 10-point scale).</li>
-                  <li>Dean’s Honour List in every semester of undergraduate study (eight times).</li>
-                  <li>Awarded the Dean of the Faculty of Arts Merit Scholarship for academic excellence in the Faculty of Arts four times (each year of study).</li>
-                  <li>Awarded University of Ottawa Merit Scholarship four times.</li> 
-                  <li>Awarded Emmett O’Grady Scholarship, which offers aid for undergraduate students in the Department of English who show outstanding promise in the field of literature.</li>
-                  <li>Awarded Isabella Valency Crawford Scholarship for high achievement in the Department of English.</li>
+              <li>
+                Entrance Scholarship of $4000 for an average above 95% upon high
+                school graduation (2019).
+              </li>
+              <li>Cumulative CGPA of 9.79 (on 10-point scale).</li>
+              <li>
+                Dean’s Honour List in every semester of undergraduate study
+                (eight times).
+              </li>
+              <li>
+                Awarded the Dean of the Faculty of Arts Merit Scholarship for
+                academic excellence in the Faculty of Arts four times (each year
+                of study).
+              </li>
+              <li>
+                Awarded University of Ottawa Merit Scholarship four times.
+              </li>
+              <li>
+                Awarded Emmett O’Grady Scholarship, which offers aid for
+                undergraduate students in the Department of English who show
+                outstanding promise in the field of literature.
+              </li>
+              <li>
+                Awarded Isabella Valency Crawford Scholarship for high
+                achievement in the Department of English.
+              </li>
             </ul>
           </div>
-          <div class="col-md-5 order-md-1 mx-auto ">
+          <div class="col-md-5 order-md-1 mx-auto">
             <img
               src="./Assets/img/images.png"
-              class=" featurette-image img-fluid" id="uottawa"
+              class="featurette-image img-fluid"
+              id="uottawa"
               preserveAspectRatio="xMidYMid slice"
               alt="University of Ottawa logo"
-            >
+            />
           </div>
         </div>
         <hr class="featurette-divider" />
-        <!-- /END THE FEATURETTES -->
+        <!-- End of the featurettes -->
       </div>
-      <!-- /.container -->
-      <!-- FOOTER -->
+      <!-- Footer -->
       <div class="footer">
         <footer class="row">
           <div class="col mx-auto">
@@ -135,17 +205,20 @@
           <div class="col mx-auto">
             <a href="#">Back to top</a>
           </div>
-         <div class="col mx-auto ">
-            <a class="fa fa-linkedin"
+          <div class="col mx-auto">
+            <a
+              class="fa fa-linkedin"
               href="https://www.linkedin.com/in/andrea-mcdermid/"
             ></a>
           </div>
         </footer>
       </div>
     </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-crossorigin="anonymous"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </html>
