@@ -1,16 +1,16 @@
 
-/* General properties and classes across pages */
-/* Backgrounds */
+/* GENERAL PROPERTIES AND CLASSES ACROSS PAGES */
+/* BACKGROUNDS */
 .gradient{
   background-image:linear-gradient(rgba(250, 236, 255, 0.98),#7a1a9e)
 }
 .lpurple-background{
   background-color: #d9ccf3;
 }
-/* General formatting classes */
+/* GENERAL FORMATTING CLASSES */
 html, body {
-  height: 100%; /* Ensures html and body take full viewport height */
-  margin: 0; /* Removes default body margin/* */
+  height: 100%; /* ENSURES HTML AND BODY TAKE FULL VIEWPORT HEIGHT */
+  margin: 0; /* REMOVES DEFAULT BODY MARGIN/* */
 }
 *{
   padding:0;
@@ -19,11 +19,11 @@ html, body {
 }
 body {
   display: flex;
-  flex-direction: column; /* Stacks header, content, and footer vertically */
+  flex-direction: column; /* STACKS HEADER, CONTENT, AND FOOTER VERTICALLY */
   min-height: 100vh;
   min-height: 100dvh;
 }
-/* Setting fonts */
+/* SETTING FONTS */
 body{
   font-family:"Nunito Sans", sans-serif;
   padding-bottom:0px;
@@ -83,7 +83,7 @@ hr{
   margin: 0 auto;
   align-self: center;
 }
-/* categories of container and images */
+/* CATEGORIES OF CONTAINER AND IMAGES */
 .inline-img {
   display: inline;
   margin: 0 0.125em;
@@ -94,18 +94,18 @@ hr{
 .margin-container{
   margin: 40px;
 }
-/* SVG modification */
+/* SVG MODIFICATION */
 .white-pic{
   filter:invert(1);
 }
-/* Navigation classes */
+/* NAVIGATION CLASSES */
 .header{
   background: #7a1a9e;
   background-image: none;
 }
-/* Changing the background of the nav bar */
+    
 .bg-body-tertiary{
-  background: #7a1a9e !important;
+  background: #7a1a9e !important; /* CHANGING THE BACKGROUND OF THE NAV BAR */
 }
 .navbar{
   padding-top:20px !important;
@@ -188,7 +188,7 @@ a.nav-bar{
 }
 
 .navbar-nav li {
-  margin-left: 10px; /* Add spacing between items */
+  margin-left: 10px; /* ADD SPACING BETWEEN ITEMS */
 }
 
 .headshot{
@@ -196,7 +196,7 @@ a.nav-bar{
   border-width: 10px ;
   border-style: solid;
 }
-/* Footer  */
+/* FOOTER  */
 .footer *{
   color:#fff;
   background-color: #21062b;
@@ -247,7 +247,7 @@ footer .fa{
   --bs-gutter-x: 0;
 }
 
-/* Modifying pre-existing bootstrap classes */
+/* MODIFYING PRE-EXISTING BOOTSTRAP CLASSES */
 .img-fluid{
   border-radius: 50%;
   max-width: 100%;
@@ -304,7 +304,7 @@ footer .fa{
   }
 }
 
-/* Modifications to bootstrap carousel classes */
+/* MODIFICATIONS TO BOOTSTRAP CAROUSEL CLASSES */
 .carousel {
     padding-bottom: 5px;
 }
@@ -312,7 +312,7 @@ footer .fa{
   background-color: #fff;
   padding: 5px;
 }
-/* Classes from education featurettes */
+/* CLASSES FROM EDUCATION FEATURETTES */
 .container-marketing{
   padding-top: 60px;
 }
@@ -323,13 +323,13 @@ footer .fa{
   margin: 20px auto;
   color:#3f2345
 }
-/* CSS for professional experience page */
-/* The actual timeline (the vertical ruler) */
+/* CSS FOR PROFESSIONAL EXPERIENCE PAGE */
+/* THE ACTUAL TIMELINE (THE VERTICAL RULER) */
 .main-timeline {
   position: relative;
 }
 
-/* The actual timeline (the vertical ruler) */
+/* THE ACTUAL TIMELINE (THE VERTICAL RULER) */
 .main-timeline::after {
   content: "";
   position: absolute;
@@ -341,14 +341,14 @@ footer .fa{
   margin-left: -3px;
 }
 
-/* Container around content */
+/* CONTAINER AROUND CONTENT */
 .timeline {
   position: relative;
   background-color: inherit;
   width: 50%;
 }
 
-/* The circles on the timeline */
+/* THE CIRCLES ON THE TIMELINE */
 .timeline::after {
   content: "";
   position: absolute;
@@ -362,13 +362,13 @@ footer .fa{
   z-index: 1;
 }
 
-/* Place the container to the left */
+/* PLACE THE CONTAINER TO THE LEFT */
 .left {
   padding: 0px 40px 20px 0px;
   left: 0;
 }
 
-/* Place the container to the right */
+/* PLACE THE CONTAINER TO THE RIGHT */
 .right {
   padding: 0px 0px 20px 40px;
   left: 50%;
@@ -399,21 +399,21 @@ footer .fa{
   left: -12px;
 }
 
-/* Media queries - Responsive timeline on screens less than 600px wide */
+/* MEDIA QUERIES - RESPONSIVE TIMELINE ON SCREENS LESS THAN 600PX WIDE */
 @media screen and (max-width: 600px) {
-  /* Place the timelime to the left */
+  /* PLACE THE TIMELIME TO THE LEFT */
   .main-timeline::after {
     left: 31px;
   }
 
-  /* Full-width containers */
+  /* FULL-WIDTH CONTAINERS */
   .timeline {
     width: 100%;
     padding-left: 70px;
     padding-right: 25px;
   }
 
-  /* Make sure that all arrows are pointing leftwards */
+  /* MAKE SURE THAT ALL ARROWS ARE POINTING LEFTWARDS */
   .timeline::before {
     left: 60px;
     border: medium solid white;
@@ -421,7 +421,7 @@ footer .fa{
     border-color: transparent white transparent transparent;
   }
 
-  /* Make sure all circles are at the same spot */
+  /* MAKE SURE ALL CIRCLES ARE AT THE SAME SPOT */
   .left::after,
   .right::after {
     left: 18px;
@@ -431,13 +431,13 @@ footer .fa{
     right: auto;
   }
 
-  /* Make all right containers behave like the left ones */
+  /* MAKE ALL RIGHT CONTAINERS BEHAVE LIKE THE LEFT ONES */
   .right {
     left: 0%;
   }
 }
 
-/* CSS for volunteering cards */
+/* CSS FOR VOLUNTEERING CARDS */
 
 .card-container{
   padding-bottom: 30px;
@@ -445,7 +445,7 @@ footer .fa{
 .card-img-top{
   max-width: 75%;
 }
-/* Setting dimensions of volunteering logo images */
+/* SETTING DIMENSIONS OF VOLUNTEERING LOGO IMAGES */
 .vol-card-img{
   position:relative;
   left: 38px;
@@ -466,7 +466,7 @@ footer .fa{
   position: relative;
   left:45px;
 }
-/* Modifying accordion properties */
+/* MODIFYING ACCORDION PROPERTIES */
 .accordion{
   --bs-accordion-border-color: #131920 !important;
 }
@@ -483,12 +483,12 @@ footer .fa{
   margin-left: auto;
   margin-right: auto;
 }
-/* CSS for skills page */
+/* CSS FOR SKILLS PAGE */
 .progress-bar{
   background-color: #840b9f;
 }
 
-/* CSS for contact page and form */
+/* CSS FOR CONTACT PAGE AND FORM */
 .contact-container{
   height:100vh;
   display:flex;
@@ -496,7 +496,7 @@ footer .fa{
   justify-content: space-evenly;
 
 }
-/* design for the left column */
+/* DESIGN FOR THE LEFT COLUMN */
 .contact-left{
   display:flex;
   flex-direction: column;
@@ -523,7 +523,7 @@ right: 20px;
   position:relative;
   right: 74px;
 }
-/* Styling the form */
+/* STYLING THE FORM */
 .contact-inputs{
   width:400px;
   height:50px;
@@ -561,7 +561,7 @@ border: 2px solid #3f2345;
 .contact-left button img{
   height:15px
 }
-/* Styling for right column */
+/* STYLING FOR RIGHT COLUMN */
 .contact-right img{
   width: 200px;
   filter: invert(1);
